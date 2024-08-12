@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: #dee8f7;
+    color: #151414;
+    padding: 10px;
+}
+
+.box {
+    border: #333 solid;
+    border-width: 4px 8px;
+    margin: 10px 30px;
+    height: 76vh;
+    border-radius: 10px;
+   
+    text-align: center;
+    overflow-y: auto;
+    /* box-shadow: 0 4px 10px rgba(142, 120, 218, 0.2);
+    font-family: 'Times New Roman', Times, serif;
+    transition: background-color 0.3s ease, color 0.3s ease; */
+}
+
+.messege{
+    background-color: #ccc;
+    width: 24%;
+    padding: 10px;
+    margin: 17px 12px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 22px;
+}
+.left{
+    float: left;
+    clear: both;
+}
+.right{
+    float: right;
+    clear: both;
+}
+
+.send {
+    margin: 0px 100px;
+    padding: 2px;
+    font-size: 3rem;
+    background-color: #f7f9fe;
+}
+#send-form{
+    display: flex;
+}
+
+
+#response-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 100px;
+    font-size: larger;
+    text-align: center;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-theme .box {
+    background-color: #444;
+    color: #fff;
+    border: #486bce solid;
+}
+
+.dark-theme #task-input {
+    background-color: #444;
+    border: #486bce solid;
+    color: #fff;
+}
+
+.dark-theme #response-container {
+    background-color: #444;
+    color: #fff;
+    border: #486bce solid;
+}
+
+.dark-theme header {
+    background-color: #222;
+    color: #f8f9fa;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.icon-button:focus {
+    outline: none;
+}
+
+span {
+    border: #486bce solid;
+    background-color: #486bce;
+    color: white;
+    border-radius: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 7px 20px;
+}
