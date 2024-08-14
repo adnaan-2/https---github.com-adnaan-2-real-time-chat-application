@@ -14,9 +14,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 io.on('connection', (socket) => {
     console.log("User connected", socket.id);
 
-    socket.on('userMessage', (message) => {
+    socket.on('sendMessage', (message) => {
         // Broadcast the message to all connected clients
-        io.emit('userMessage', message);
+        io.emit('recieveMessage', message);
     });
 
     socket.on('disconnect', () => {
@@ -26,7 +26,7 @@ io.on('connection', (socket) => {
 
 // Serve the main HTML file
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'client.html'));
 });
 
 // Start the server
